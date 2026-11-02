@@ -1,9 +1,146 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Page</title>
-  </head>
-  <body>
-    <h1>Hello World! My website is live on GitHub.</h1>
-  </body>
-</html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Financial services for investment planning, mutual funds, insurance, bonds and retirement solutions.">
+<title>Indra Capital | Investment & Insurance Solutions</title>
+<style>
+:root{--navy:#102b50;--navy2:#173d68;--gold:#c59a46;--ink:#17283d;--muted:#627187;--paper:#f5f7fa;--line:#e4e9ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+.brand{font-weight:800;color:var(--navy);font-size:19px;letter-spacing:.3px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:1.5px;font-weight:600}
+nav{display:flex;gap:22px;align-items:center;font-size:14px;color:#34465c}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#142b47;padding:13px 20px;border-radius:6px;font-weight:700;border:0;cursor:pointer}
+.btn.secondary{background:transparent;color:#fff;border:1px solid #ffffff80}
+.hero{background:linear-gradient(115deg,rgba(10,34,63,.97),rgba(21,61,103,.88)),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;padding:92px 0 84px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.eyebrow{color:#e4c47e;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700}
+h1{font-size:clamp(36px,5vw,58px);line-height:1.12;margin:15px 0 20px;max-width:720px}
+.hero p{color:#e1e9f2;font-size:18px;max-width:640px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-card{background:#fff;color:var(--ink);padding:28px;border-radius:12px;box-shadow:0 18px 50px #06182d55}
+.hero-card h3{margin:0 0 8px;color:var(--navy);font-size:22px}.hero-card p{font-size:14px;color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pill{font-size:12px;border:1px solid #dce3eb;color:#34465c;border-radius:30px;padding:7px 10px}
+.trust{background:#f8f9fb;border-bottom:1px solid var(--line)}.trust-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:20px 0;color:#34465c;font-size:13px;font-weight:700}
+section{padding:76px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 38px}.section-head .eyebrow{color:#a77a2e}.section-head h2{font-size:34px;line-height:1.2;color:var(--navy);margin:9px 0 12px}.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:10px;padding:25px;background:white;transition:.2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 28px #102b5012}
+.icon{width:43px;height:43px;background:#f5eddf;color:#8b672b;border-radius:9px;display:grid;place-items:center;font-size:21px}
+.card h3{color:var(--navy);margin:16px 0 8px;font-size:19px}.card p{color:var(--muted);font-size:14px;margin:0}
+.soft{background:var(--paper)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about-panel{background:var(--navy);color:white;border-radius:12px;padding:34px}.about-panel h3{font-size:25px;margin:0 0 14px}.about-panel p{color:#dce6f1}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.check{font-size:14px;color:#e8eef5}.check:before{content:"✓";color:#e4c47e;font-weight:bold;margin-right:8px}
+.partner{background:white;border:1px solid var(--line);border-radius:10px;padding:22px}.partner strong{color:var(--navy);font-size:20px}.partner p{font-size:14px;color:var(--muted);margin-bottom:0}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{padding:22px;border-left:3px solid var(--gold);background:#fff}.step b{color:var(--navy);font-size:18px}
+.cta{background:linear-gradient(110deg,var(--navy),var(--navy2));color:white;text-align:center;padding:62px 0}.cta h2{font-size:34px;margin:0 0 10px}.cta p{color:#dce6f1;margin:0 auto 24px;max-width:650px}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.contact-info{background:var(--paper);padding:28px;border-radius:10px}.contact-info h3{color:var(--navy);margin-top:0}
+form{display:grid;gap:13px}input,select,textarea{width:100%;padding:13px;border:1px solid #d8e0e9;border-radius:6px;font:inherit;background:white}textarea{min-height:110px;resize:vertical}form .btn{font-size:15px}
+footer{background:#0b2039;color:#d5dfeb;padding:35px 0 22px;font-size:13px}footer .foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}footer strong{color:white}footer p{color:#b8c5d4;max-width:780px}.disclaimer{border-top:1px solid #ffffff25;margin-top:24px;padding-top:18px;color:#aebdcd;font-size:11px}
+@media(max-width:800px){nav{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:68px 0}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.hero-card{max-width:520px}}
+@media(max-width:520px){.cards{grid-template-columns:1fr}.trust-row{display:grid;grid-template-columns:1fr 1fr}.checks{grid-template-columns:1fr}.section-head h2,.cta h2{font-size:28px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+  <a class="brand" href="#home">INDRA CAPITAL<small>INVESTMENT • INSURANCE • WEALTH SOLUTIONS</small></a>
+  <nav><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#partners">Partners</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="https://wa.me/918700699763?text=Hello%20Indra%20Capital%2C%20I%20would%20like%20to%20know%20about%20your%20financial%20services.">WhatsApp Us</a>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+  <div>
+    <div class="eyebrow">A thoughtful approach to your financial future</div>
+    <h1>Plan today. Protect tomorrow. Build wealth for life.</h1>
+    <p>Personalised investment and insurance solutions to help you work towards your financial goals—with informed choices, clear conversations and ongoing support.</p>
+    <div class="hero-actions"><a class="btn" href="#contact">Request a Consultation</a><a class="btn secondary" href="#services">Explore Our Services</a></div>
+  </div>
+  <div class="hero-card">
+    <h3>Your goals. A range of solutions.</h3>
+    <p>Explore investment, protection, retirement and fixed-income options based on your needs, time horizon and risk profile.</p>
+    <div class="pills"><span class="pill">Mutual Funds</span><span class="pill">Life Insurance</span><span class="pill">Health Insurance</span><span class="pill">Bonds</span><span class="pill">NPS</span><span class="pill">PMS</span><span class="pill">LAMF</span></div>
+  </div>
+</div></section>
+
+<div class="trust"><div class="container trust-row"><span>AMFI-REGISTERED MUTUAL FUND DISTRIBUTOR · ARN-367060</span><span>INSURANCE SERVICES*</span><span>TECHNOLOGY PARTNER: ASSET PLUS</span><span>LIC OF INDIA ASSOCIATION*</span></div></div>
+
+<section id="services"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our solutions</div><h2>Financial solutions for every life stage</h2><p>Whether you are starting out, protecting your family, building a portfolio or planning retirement, we can help you explore suitable options.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">↗</div><h3>Mutual Funds</h3><p>Explore mutual fund categories and investment approaches aligned with your goals, investment horizon and risk appetite.</p></article>
+    <article class="card"><div class="icon">♡</div><h3>Life Insurance</h3><p>Consider life insurance solutions designed to support financial protection for your loved ones.</p></article>
+    <article class="card"><div class="icon">✚</div><h3>Health Insurance</h3><p>Review health cover options to help manage the financial impact of eligible medical expenses.</p></article>
+    <article class="card"><div class="icon">▤</div><h3>Bonds & Corporate Bonds</h3><p>Understand available fixed-income instruments, their risks, tenure, liquidity and issuer-related considerations.</p></article>
+    <article class="card"><div class="icon">◎</div><h3>Retirement & NPS</h3><p>Explore retirement-focused solutions and the National Pension System as part of long-term planning.</p></article>
+    <article class="card"><div class="icon">◇</div><h3>PMS & LAMF</h3><p>Learn about Portfolio Management Services and loans against mutual fund units, subject to eligibility and suitability.</p></article>
+  </div>
+</div></section>
+
+<section class="soft" id="about"><div class="container about-grid">
+  <div><div class="eyebrow">About our practice</div><h2 style="color:var(--navy);font-size:34px;line-height:1.2">A relationship-led approach to financial decisions</h2>
+    <p style="color:var(--muted)">We aim to make financial choices easier to understand. We begin by listening to your goals and circumstances, then help you review relevant products, features, costs and risks before you decide.</p>
+    <div class="checks"><div class="check">Goal-oriented discussions</div><div class="check">Product information explained</div><div class="check">Risk-aware conversations</div><div class="check">Ongoing service support</div></div>
+  </div>
+  <div class="about-panel"><h3>Professional credentials & associations</h3><p>Use this section to display your verified registration, certification and association details transparently.</p>
+    <p><strong>Mutual Fund Distribution:</strong> AMFI-registered Mutual Fund Distributor · ARN-367060</p>
+    <p><strong>Insurance:</strong> Insurance solutions offered in the capacity permitted by the applicable current authorisation and insurer appointments. Add the exact licence / agency particulars before publication.</p>
+    <p><strong>LIC of India:</strong> Associated with LIC of India. Product solicitation and use of LIC branding are subject to your current authorisation and LIC guidelines.</p>
+  </div>
+</div></section>
+
+<section id="partners"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our ecosystem</div><h2>Technology and service associations</h2><p>We work with established platforms and institutions to support service delivery. Please use partner names and logos only in line with their branding and approval requirements.</p></div>
+  <div class="cards">
+    <div class="partner"><strong>ASSET PLUS</strong><p>Technology partner supporting our mutual fund distribution and related digital service journey.</p></div>
+    <div class="partner"><strong>LIC OF INDIA</strong><p>LIC association. Add your exact authorised status and permitted branding details here.</p></div>
+    <div class="partner"><strong>YOUR PRACTICE</strong><p>Independent client relationship, needs discussion and support across the financial solutions listed on this website.</p></div>
+  </div>
+</div></section>
+
+<section class="soft"><div class="container">
+  <div class="section-head"><div class="eyebrow">How we work</div><h2>A clear, simple process</h2><p>Every recommendation or product discussion should begin with understanding your needs.</p></div>
+  <div class="steps"><div class="step"><b>01. Understand</b><p>Discuss your goals, current financial position, time horizon and risk tolerance.</p></div><div class="step"><b>02. Explore</b><p>Review relevant solutions, product features, charges, exclusions, risks and alternatives.</p></div><div class="step"><b>03. Decide & review</b><p>Make an informed decision and review your arrangements periodically as your needs change.</p></div></div>
+</div></section>
+
+<section class="cta"><div class="container"><h2>Let’s start a conversation about your goals.</h2><p>Connect with us for a discussion about investment, insurance, retirement or fixed-income solutions.</p><a class="btn" href="https://wa.me/918700699763?text=Hello%20Indra%20Capital%2C%20I%20would%20like%20to%20discuss%20my%20financial%20goals.">WhatsApp Us</a></div></section>
+
+<section id="contact"><div class="container">
+  <div class="section-head"><div class="eyebrow">Get in touch</div><h2>Let’s discuss your financial needs</h2><p>Share your contact details and preferred way to connect. Replace the sample details below before publishing.</p></div>
+  <div class="contact-grid">
+    <div class="contact-info"><h3>Contact information</h3><p><strong>Advisor / Business name</strong><br>Indra Pathak</p><p><strong>Phone / WhatsApp</strong><br>+91 87006 99763</p><p><strong>Email</strong><br>indrapathak.hrm@gmail.com</p><p><strong>Office</strong><br>Delhi, India</p><p style="font-size:12px;color:var(--muted)">For a direct WhatsApp link, replace the sample number in the website code with your full country code and number.</p></div>
+    <form id="enquiryForm">
+      <input required name="name" placeholder="Your name">
+      <input required name="phone" type="tel" placeholder="Your mobile number">
+      <input name="email" type="email" placeholder="Email address (optional)">
+      <select name="interest"><option value="">I am interested in...</option><option>Mutual Funds</option><option>Life Insurance</option><option>Health Insurance</option><option>Bonds / Corporate Bonds</option><option>NPS / Retirement Planning</option><option>PMS</option><option>Loan Against Mutual Funds</option><option>General financial discussion</option></select>
+      <textarea name="message" placeholder="Tell us briefly how we can help"></textarea>
+      <button class="btn" type="submit">Send enquiry on WhatsApp</button>
+      <small style="color:var(--muted)">Your details will be placed in a WhatsApp message to Indra Capital. You can review and send it from WhatsApp.</small>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container">
+  <div class="foot-top"><div><strong>INDRA CAPITAL</strong><p>Investment, insurance and financial solutions.</p></div><div><strong>Important information</strong><p>Mutual fund investments are subject to market risks. Read all scheme-related documents carefully. Insurance products are subject to policy terms, conditions, exclusions and underwriting. Bonds and other investments carry risks, including credit, interest-rate and liquidity risks. PMS is subject to applicable eligibility requirements and risk disclosures. LAMF is subject to lender terms and eligibility.</p></div></div>
+  <div class="disclaimer">*Indra Capital · Indra Pathak · Delhi, India · AMFI ARN-367060. Display only current, verifiable registrations, certifications, appointments and licence particulars. Do not imply guaranteed returns, assured performance, or that any product is suitable for everyone. This website is for general information and does not constitute a promise of returns or a substitute for product documents or individual assessment. Past performance is not indicative of future results. Replace all placeholders and obtain applicable compliance / principal approval before publishing. This is an independent distributor / advisor website and is not the official website of LIC of India or ASSET PLUS. Company names are used only to describe the stated association / technology relationship, subject to applicable permissions.</div>
+</div></footer>
+<script>
+document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const data = new FormData(this);
+  const message = [
+    'Hello Indra Capital, I would like to make an enquiry.',
+    'Name: ' + (data.get('name') || ''),
+    'Mobile: ' + (data.get('phone') || ''),
+    'Email: ' + (data.get('email') || 'Not provided'),
+    'Interested in: ' + (data.get('interest') || 'Not specified'),
+    'Message: ' + (data.get('message') || 'Not provided')
+  ].join('\\n');
+  window.open('https://wa.me/918700699763?text=' + encodeURIComponent(message), '_blank', 'noopener');
+});
+</script>
+</body></html>
